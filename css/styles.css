@@ -1,0 +1,46 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family:serif;
+ box-sizing: border-box;
+ user-select: none;
+}
+
+a{
+ text-decoration: none;
+ color: white;
+}
+
+body{
+ margin-left: 4%;
+ margin-right: 4%;
+ margin-top: 1rem;
+ background-color: black;
+ color: white;
+}
+
+.img-fluid{
+ max-width:100%;
+ height: auto;
+}
+
+.background{
+ background-image:url("https://nebugold.com/cdn/shop/files/banner_2_1.jpg?v=1695720922&width=3840");
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-attachment: fixed;
+ border-radius: 5px;
+ position: relative;
+ isolation: isolate;
+ padding: 1rem;
+}
+.background::before{
+ content: "";
+ position: absolute;
+ inset: 0;
+ background-color: rgb(20,20,20);
+ opacity: 0.5;
+ z-index: -1;
+ border-radius: 5px;
+}
