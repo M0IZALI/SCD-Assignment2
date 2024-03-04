@@ -126,3 +126,25 @@ nav li a:hover{
 nav li a:active{
  opacity:80%;
 }
+
+main{
+ text-align: center;
+ padding: 1rem;
+}
+
+section{
+ display: flex;
+ gap: 5px;
+}
+
+section article img {
+ width: 40vw;
+}
+
+article{
+ flex: 1;
+}
+
+article img~p{
+ margin-top:0.5rem;
+}
