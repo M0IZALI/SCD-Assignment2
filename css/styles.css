@@ -79,3 +79,50 @@ body{
  opacity: 80%;
  transition: 0.2s ease-in;
 }
+
+header > img{
+ display: block;
+ margin: 0 auto;
+ width: 50vw;
+ transition: 0.2s ease-out;
+}
+
+header > img:hover{
+ transform: scale(1.1);
+}
+
+nav{
+ background-color: rgba(20,20,20,0.98);
+ padding: 0.4rem 0 0.4rem 0;
+ border-radius: 5px;
+ margin: 0.5rem 1rem 0 1rem;
+}
+
+nav ul{
+ list-style: none;
+ text-align: center;
+}
+
+nav li{
+ display: inline-block;
+ margin-right: 1rem;
+}
+
+nav li:last-child{
+ margin-right: 0;
+}
+
+nav li a{
+ padding: 0.2rem;
+ border-radius: 5px;
+}
+
+nav li a:hover{
+ color:black;
+ background-color: white;
+ transition: 0.1s linear;
+}
+
+nav li a:active{
+ opacity:80%;
+}
