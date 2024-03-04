@@ -1,0 +1,150 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family:serif;
+ box-sizing: border-box;
+ user-select: none;
+}
+
+a{
+ text-decoration: none;
+ color: white;
+}
+
+body{
+ margin-left: 4%;
+ margin-right: 4%;
+ margin-top: 1rem;
+ background-color: black;
+ color: white;
+}
+
+.img-fluid{
+ max-width:100%;
+ height: auto;
+}
+
+.background{
+ background-image:url("https://nebugold.com/cdn/shop/files/banner_2_1.jpg?v=1695720922&width=3840");
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-attachment: fixed;
+ border-radius: 5px;
+ position: relative;
+ isolation: isolate;
+ padding: 1rem;
+}
+.background::before{
+ content: "";
+ position: absolute;
+ inset: 0;
+ background-color: rgb(20,20,20);
+ opacity: 0.5;
+ z-index: -1;
+ border-radius: 5px;
+}
+
+.product{
+ padding: 1rem;
+ margin-top:0.5rem;
+ border-radius: 5px;
+ text-transform: uppercase;
+ background-color: rgba(20,20,20);
+ position: relative;
+ isolation:isolate;
+}
+
+.product img{
+ mix-blend-mode: color-dodge;
+ transition: 0.1s ease-in;
+}
+
+.product img:hover{
+ transform: scale(1.1);
+}
+
+.product::after{
+ content: "";
+ position: absolute;
+ inset: 2% 2% 2% 2%;
+ border: 1px solid rgb(255,255,255);
+ box-shadow: 0px 0px 1px rgb(255,255,255);
+ border-radius: 5px;
+ opacity: 0%;
+ z-index: -1;
+}
+
+.product:hover::after{
+ opacity: 80%;
+ transition: 0.2s ease-in;
+}
+
+header > img{
+ display: block;
+ margin: 0 auto;
+ width: 50vw;
+ transition: 0.2s ease-out;
+}
+
+header > img:hover{
+ transform: scale(1.1);
+}
+
+nav{
+ background-color: rgba(20,20,20,0.98);
+ padding: 0.4rem 0 0.4rem 0;
+ border-radius: 5px;
+ margin: 0.5rem 1rem 0 1rem;
+}
+
+nav ul{
+ list-style: none;
+ text-align: center;
+}
+
+nav li{
+ display: inline-block;
+ margin-right: 1rem;
+}
+
+nav li:last-child{
+ margin-right: 0;
+}
+
+nav li a{
+ padding: 0.2rem;
+ border-radius: 5px;
+}
+
+nav li a:hover{
+ color:black;
+ background-color: white;
+ transition: 0.1s linear;
+}
+
+nav li a:active{
+ opacity:80%;
+}
+
+main{
+ text-align: center;
+ padding: 1rem;
+}
+
+section{
+ display: flex;
+ gap: 5px;
+}
+
+section article img {
+ width: 40vw;
+}
+
+article{
+ flex: 1;
+}
+
+article img~p{
+ margin-top:0.5rem;
+}
