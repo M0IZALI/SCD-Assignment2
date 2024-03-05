@@ -169,6 +169,7 @@ article img~p{
     margin-top: 0.5rem;
     border-radius: 5px;
     background-color:rgba(20, 20, 20, 0.98);
+}
 
 footer{
     display: flex;
