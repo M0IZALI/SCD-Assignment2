@@ -24,6 +24,11 @@ body{
  height: auto;
 }
 
+.img-fluid2{  
+    max-width: 30%;
+    height: auto;
+}
+
 .background{
  background-image:url("https://nebugold.com/cdn/shop/files/banner_2_1.jpg?v=1695720922&width=3840");
  background-size: cover;
@@ -137,6 +142,16 @@ section{
  gap: 5px;
 }
 
+section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section > div h1{
+    font-size: 3rem;
+}
+
 section article img {
  width: 40vw;
 }
@@ -149,6 +164,12 @@ article img~p{
  margin-top:0.5rem;
 }
 
+.paragraph{
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    background-color:rgba(20, 20, 20, 0.98);
+
 footer{
     display: flex;
     align-items: center;
@@ -156,14 +177,17 @@ footer{
     border-radius: 5px;
     margin: 0 1rem 0 1rem;
 }
+
 footer div{
     flex:1;
     text-align: center;
     padding: 0.5rem;
 }
+
 footer > div img{
     width: 5rem;
 }
+
 footer > div p{
     color: white;
 }
